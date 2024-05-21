@@ -1,0 +1,13 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+.nav__wrapper {
+  height: 80px;
+}
+
+.nav__logo img{
+  border-radius: 50%;
+  width: 65px;
+}
