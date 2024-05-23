@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Proyecto de Curso de Frontend</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script>
@@ -23,8 +27,13 @@
       <div class="nav__logo">
         <img src="src/images/logo.png" alt="Logo GVallejos">
       </div>
-      <div id="nav__button" class="nav__button">
-        <button class="button button--white">Contáctame</button>
+      <div id="nav__button" class="nav__button">        
+        <a href="https://linktr.ee/gvallejos" target="_blank" class="button button--white">
+          <span>Contáctame</span>
+          <div class="button__icon-border">
+            <span class="fa fa-chain"></span>
+          </div> 
+        </a>
       </div>
     </div>
   </nav>
@@ -36,21 +45,28 @@
       <div class="header__banner">
         <h1>Bienvenido a mi Proyecto de Frontend</h1>
         <div class="header__button--main">
-          <button class="button button--black">Conoce más de mi</button>
+          <a href="https://gvallejos.com/" target="_blank" class="button button--black">
+            <span>Conoce más de mi</span>  
+            <div class="button__icon-border">
+              <span class="fa fa-external-link-square"></span>         
+            </div>
+          </a>
         </div>
       </div>
     </header>
     
     <section id="section-img" class="section--margin section-img__container">
       <div class="section-img__top">
-        <div class="section-img__top--short">
-          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+        <div>
+          <strong>Let me tell you about me...</strong>
+          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
         </div>
-        <div class="section-img__top--large">
+        <div>
           Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics
         </div>
       </div>
-      <div class="section-img__image">
+      <div class="section-img__overlay section-img--border"></div>
+      <div class="section-img__image section-img--border">
         <img src="src/images/display-img.jpg" alt="Imagen Principal">
       </div>      
     </section>
@@ -64,19 +80,34 @@
           <div class="contenido-digital__grid--item">
             <h3>Hablemos de Salesforce</h3>
             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-            <button>Ver Más</button>
+            <a href="https://www.youtube.com/@HablemosDeSalesforce" target="_blank" class="button button--white">
+              <span>Ver Más</span>
+              <div class="button__icon-border">
+                <span class="fa fa-external-link"></span>
+              </div>
+            </a>
           </div>
 
           <div class="contenido-digital__grid--item">
-            <h3>Hablemos de Salesforce</h3>
+            <h3>Snake On Code</h3>
             <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus</p>
-            <button>Ver Más</button>
+            <a href="https://snakeoncode.com/" target="_blank" class="button button--white">
+              <span>Ver Más</span>
+              <div class="button__icon-border">
+                <span class="fa fa-external-link"></span>
+              </div>
+            </a>
           </div>
 
           <div class="contenido-digital__grid--item">
-            <h3>Hablemos de Salesforce</h3>
+            <h3>GVallejos.com</h3>
             <p>To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?</p>
-            <button>Ver Más</button>
+            <a href="https://gvallejos.com/" target="_blank" class="button button--white">
+              <span>Ver Más</span>
+              <div class="button__icon-border">
+                <span class="fa fa-external-link"></span>
+              </div>
+            </a>
           </div>
 
         </div>
@@ -95,17 +126,17 @@
       </div>
       <div class="footer__rs--wrapper">
         <div class="footer__rs--item">
-          <a href="#">
+          <a href="https://www.linkedin.com/in/gianvallejos/" target="_blank">
             <span class="fa fa-linkedin"></span>
           </a>
         </div>
         <div class="footer__rs--item">
-          <a href="#">
+          <a href="https://www.instagram.com/gvallejos.dev/" target="_blank">
             <span class="fa fa-instagram"></span>
           </a>
         </div>        
         <div class="footer__rs--item">
-          <a href="#">
+          <a href="https://x.com/gianvallejos_pe" target="_blank">
             <span class="fa fa-twitter"></span>
           </a>
         </div>
